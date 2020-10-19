@@ -1,0 +1,8 @@
+<div class="card" style="width: 18rem;">
+  <img [src]="Usuario.img" class="card-img-top">
+  <div class="card-body">
+    <h5 class="card-title">{{Usuario.nombre}}</h5>
+    <p class="card-text">{{Usuario.id}}</p>
+    <a *ngIf="Usuario.id%2 == 0" class="btn btn-primary" (click)="reciboUusario()">Boton porque es par</a>
+  </div>
+</div>
